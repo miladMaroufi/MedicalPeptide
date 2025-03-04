@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Peptide</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        .product { border: 1px solid #ddd; padding: 10px; margin: 10px; display: inline-block; }
-        .cart { margin-top: 20px; padding: 15px; border: 1px solid #000; display: inline-block; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Medical Peptide</h1>
-    <p>High-quality research peptides available for purchase.</p>
-    <div class="product">
-        <h2>Peptide A</h2>
-        <p>Purity: 99% | 10mg per vial</p>
-        <button onclick="addToCart('Peptide A')">Add to Cart</button>
-    </div>
-    <div class="product">
-        <h2>Peptide B</h2>
-        <p>Purity: 98% | 10mg per vial</p>
-        <button onclick="addToCart('Peptide B')">Add to Cart</button>
-    </div>
-    <div class="cart">
-        <h2>Shopping Cart</h2>
-        <ul id="cart"></ul>
-    </div>
-    <script>
-        function addToCart(product) {
-            const cart = document.getElementById("cart");
-            const item = document.createElement("li");
-            item.textContent = product;
-            cart.appendChild(item);
-        }
-    </script>
+    <header>
+        <h1>Welcome to Medical Peptide</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <h3>Peptide A</h3>
+            <p>Purity: 99%</p>
+            <p>10mg per vial</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Peptide B</h3>
+            <p>Purity: 98%</p>
+            <p>10mg per vial</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Medical Peptide. All rights reserved.</p>
+    </footer>
 </body>
 </html>
